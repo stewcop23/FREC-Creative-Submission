@@ -13,12 +13,14 @@ The funamental equation used to calculate this is an "example of how complex, ch
 $$x_{n+1} = rx_n(1-x_n)$$
 
 Where:
-x_n is the current population (a rational number greater than 0, but less than 1)(i.e.: 0.1, 0.736483, 0.999999, etc.)
 
-The parameter r here refers to the growth rate of the population. $`r > 4`$ will create $`x_n+1`$'s that lie outside of our desired range for x_n, so only values of 0<r<4 are considered
-x_n+1 is the population of the next generation
+$`x_n`$ is the current population (a rational number greater than 0, but less than 1)(i.e.: 0.1, 0.736483, 0.999999, etc.)
 
-if this equation is plotted with r ans the x axis and x_n plotted as the y axis, as this equation is iterated, the logistic map will be formed
+The parameter r here refers to the growth rate of the population. $`r > 4`$ will create $`x_n+1`$'s that lie outside of our desired range for $`x_n`$, so only values of $`0<r<4`$ are considered
+
+$`x_{n+1}`$ is the population of the next generation
+
+if this equation is plotted with r ans the x axis and x_n plotted as the y axis, as this equation is iterated, the logistic map will be formed.
 
 ## Python Implementation
 
