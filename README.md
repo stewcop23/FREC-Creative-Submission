@@ -11,7 +11,7 @@ This equation was first used to model the populations of a species under varying
 
 The funamental equation used to calculate this is an "example of how complex, chaotic behaviour can arise from very simple nonlinear dynamical equations", and is given by:
 
-[EQN]
+$$x_{n+1} = rx_n(1-x_n)$$
 
 Where:
 x_n is the current population (a rational number greater than 0, but less than 1)(i.e.: 0.1, 0.736483, 0.999999, etc.)
