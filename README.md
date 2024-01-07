@@ -31,3 +31,7 @@ A simple implentation of this was rather easy to construct. All it required was 
 
 ### "Anti-Aliased" Implementation
 
+This implementation is very similar to the previous, however instead of simply changing the pixel from 0 to 1, the brightness is increment by 1/255 (its a binary thing). This was implemented to allow for a lower resolution image to capture the intricacies of the fractal
+
+### The Interactable Version
+
