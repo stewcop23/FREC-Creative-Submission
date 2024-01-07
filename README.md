@@ -42,7 +42,7 @@ This implementation is very similar to the previous, however instead of simply c
 
 After the creation of the Anti-aliased version I wanted to create something that would not only allow myself to explore this fractal in more depth, but to also allow others to see the beaty of this equation. This was a pain in the ass to implement, but I was ultimately able to get this working somewhat reliably.
 
-Feel free to run the code yourself, it requires installing the tkinter library in python. left click zooms in, right click zooms out. Please be mindfull that a LOT of calculations have to be run every time you click,so please be patient as it calculates and renders the next image.
+Feel free to run the code yourself, it requires installing the tkinter library in python. left click zooms in, right click zooms out. Please be mindful that a LOT of calculations have to be run every time you click, so please be patient as it calculates and renders the next image.
 
 The code is commented, but there were a few lines I wrote while sleep deprived, and so I have no idea why they work.
 
