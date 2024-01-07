@@ -20,6 +20,10 @@ $`x_{n+1}`$ is the calculated population of the next generation
 
 if this equation is plotted with $r$ on the x axis and $x_n$ plotted as the y axis, as this equation is iterated, the logistic map will be formed.
 
+### Learn More!:
+* [A Video by Veritasium](https://www.youtube.com/watch?v=ovJcsL7vyrk)
+* [Wikipedia](https://en.wikipedia.org/wiki/Logistic_map)
+
 ## Python Implementations
 
 ### First Implementation
