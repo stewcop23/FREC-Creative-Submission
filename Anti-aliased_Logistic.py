@@ -6,8 +6,8 @@ def new_generation(r,xn):
 def brighten(xy,increase=int(255/100)):
     draw.point(xy,(img.getpixel(xy)+increase))
 
-devisions = int(7680/4.5)
-vertical= int(4320/4.5)
+devisions = int(1000)
+vertical= int(560)
 max_r = 4
 
 generations = 5000

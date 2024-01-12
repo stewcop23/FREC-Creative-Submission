@@ -4,13 +4,14 @@ from tkinter import Tk,Canvas,BOTH,mainloop
 
 canvas_width = 1000
 canvas_height = 500
+triclor = ["#113360","#EFBE33","#9C193B"]
 
 
-def paint(x,y,color="#476042"): # this is what draws the dots on the screen, this is kinda self explanitory
+def paint(x,y,color="#000000"): # this is what draws the dots on the screen, this is kinda self explanitory
     python_green = color
     x1, y1 = (x - 1), (y - 1)
     x2, y2 = (x + 1), (y + 1)
-    w.create_oval(x1, y1, x2, y2, fill=python_green)
+    w.create_oval(x1, y1, x2, y2, fill=python_green,width=0)
 
 def draw(startx,maxx,starty,maxy):
     print(startx,maxx,starty,maxy) #debugging! breakpoints be damned
@@ -35,7 +36,7 @@ def draw(startx,maxx,starty,maxy):
                 continue
             offset_population = population*canvas_height - starty #this shifts the pixels vertically such that anything less thatn starty will be less than 0
             if offset_population < cut_hight and offset_population > 0: #check to make sure the point being drawn is within the cut range
-                paint(int(x_on_canvas-1),int(offset_population*canvas_height/cut_hight)*-1+canvas_height) #litterally magic, i wrote this at 3 am while running purely on cafeine
+                paint(int(x_on_canvas-1),int(offset_population*canvas_height/cut_hight)*-1+canvas_height,triclor[generation%3]) #literally magic, i wrote this at 3 am while running purely on cafeine
                 
 
     print("drawing done?") # im so good at debugging
