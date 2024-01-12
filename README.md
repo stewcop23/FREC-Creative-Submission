@@ -4,15 +4,15 @@ Tasked with creating a creative work that describes the impact that O-Week has h
 
 ## The Logistic Map
 
-This equation was first used to model the populations of a species under varying growth rates, and has since been shown to appear in many other areas of mathmatics such as the mandelbrot set, or liquid convection
+This equation was first used to model the populations of a species under varying growth rates, and has since been shown to appear in many other areas of mathmatics such as the mandelbrot set, or the motion of fluids during convection
 
-The funamental equation used to calculate this is an "example of how complex, chaotic behaviour can arise from very simple nonlinear dynamical equations", and is given by:
+The fundamental equation used to calculate this is an "example of how complex, chaotic behaviour can arise from very simple nonlinear dynamical equations", and is given by:
 
 $$x_{n+1} = rx_n(1-x_n)$$
 
 Where:
 
-$`x_n`$ is the current population (a rational number greater than 0, but less than 1) (i.e.: 0.1, 0.736483, 0.999999, etc.)
+$`x_n`$ is the current population and is in the set $`\{x_n \in \mathbb{Q} | 0 \lt x \lt 1 \}`$
 
 The parameter $r$ here refers to the growth rate of the population. $`r > 4`$ will create $`x_n+1`$'s that lie outside of our desired range for $`x_n`$, so only values $`0 < r < 4`$ are considered.
 
@@ -44,7 +44,7 @@ This implementation is very similar to the previous, however instead of simply c
 ![screenshot of a soomed in portion of the logistic map](zoomed_in_tkinter.png)
 [Code for this version](Logistic_Tkinter.py)
 
-After the creation of the Anti-aliased version I wanted to create something that would not only allow myself to explore this fractal in more depth, but to also allow others to see the beaty of this equation. This was a pain in the ass to implement, but I was ultimately able to get this working somewhat reliably.
+After the creation of the Anti-aliased version I wanted to create something that would not only allow myself to explore this fractal in more depth, but to also allow others to see the beauty of this equation. This was a pain in the ass to implement, but I was ultimately able to get this working somewhat reliably. While on the surface this may look lower resolution, but by zooming in, you can get much higher detail than the other implementations
 
 Feel free to run the code yourself, it requires installing the tkinter library in python. left click zooms in, right click zooms out. Please be mindful that a LOT of calculations have to be run every time you click, so please be patient as it calculates and renders the next image.
 
