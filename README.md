@@ -49,6 +49,8 @@ After the creation of the Anti-aliased version I wanted to create something that
 Feel free to run the code yourself, it requires installing the tkinter library in python. left click zooms in, right click zooms out. Please be mindful that a LOT of calculations have to be run every time you click, so please be patient as it calculates and renders the next image.
 
 The code is commented, but there were a few lines I wrote while sleep deprived, and so I have no idea why they work.
+#### Tricolor version
+this functions exactly the same but the points are colored in the queens tricolor
 
 
 
