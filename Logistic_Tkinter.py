@@ -35,7 +35,7 @@ def draw(startx,maxx,starty,maxy):
                 continue
             offset_population = population*canvas_height - starty #this shifts the pixels vertically such that anything less thatn starty will be less than 0
             if offset_population < cut_hight and offset_population > 0: #check to make sure the point being drawn is within the cut range
-                paint(int(x_on_canvas-1),int(offset_population*canvas_height/cut_hight)*-1+canvas_height) #litterally magic, i wrote this at 3 am while running purely on cafeine
+                paint(int(x_on_canvas-1),int(offset_population*canvas_height/cut_hight)*-1+canvas_height) #literally magic, i wrote this at 3 am while running purely on cafeine
                 
 
     print("drawing done?") # im so good at debugging
